@@ -20,6 +20,7 @@ var arr = [10,20,30];
 function first (arr){
   return arr[0]
 }
+
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -32,8 +33,9 @@ var arr = [40,50,60];
 */
 
 function last (arr){
-  return arr[2]
+  return arr[arr.length-1]
 }
+
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
@@ -46,9 +48,9 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 function looper(family){
-for (let i = 0; i = family.length-1; i++){
-  alert(family[i])
-}
+for (let i = 0; i < family.length; i++){
+  alert (family[i])
+  }
 }
 
 ////////// PROBLEM 4 //////////
@@ -62,10 +64,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-//Code Here
-
-
-
+function reversedLooper(letters) {
+  for (let i = letters.length-1; i >= 0; i-- ) {
+    alert(letters[i])
+  }
+}
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
@@ -78,12 +81,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
+let evens = []
 
-
-
-
-
-
+function evenFinder(nums){
+  for (i = 0; i < nums.length; i++){
+    if (nums[i]%2 != 1){
+    evens.push(nums[i])
+  }
+  }
+  return evens
+}
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
