@@ -97,10 +97,6 @@ function evenFinder(nums){
 
 
 
-
-
-
-
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
@@ -165,6 +161,26 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(myGroceryList, item){
+  let newArray = []
+  if(myGroceryList&&item)
+  for (let i = 0; i<myGroceryList.length; i++) {
+    if(myGroceryList[i] === item){
+      myGroceryList.splice(i, 1)
+    }
+    return myGroceryList
+  } else {
+    return newArray
+  }
+}
+function addItem(myGroceryList, item){
+  let newArray =[]
+  if(myGroceryList&&item) {
+  myGroceryList.push(item)
+  return myGroceryList
+} else {
+  return newArray
+}
 
 
 
